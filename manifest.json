@@ -1,0 +1,22 @@
+{
+  "name": "jitsi speaker stats exporter",
+  "version": "1.0",
+  "description": "The extension can export the speaker stats from jitsi as a csv file.",
+  "permissions": [
+    "activeTab",
+    "declarativeContent"
+  ],
+  "web_accessible_resources": [
+    "/injected.js"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
