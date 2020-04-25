@@ -14,8 +14,8 @@ The extension was created because a friend's organization provides voluntary web
 
 ## Limitations
 
-- This extension only works on https://meet.jit.si right now.
-- Currently, the extension is only available in German 🇩🇪 translation. There is an [issue](https://github.com/Robert-Beier/jitsi-speaker-stats-exporter/issues/3) for adding localization.
+- This extension only works on https://meet.jit.si right now. There is an [open issue](https://github.com/Robert-Beier/jitsi-speaker-stats-exporter/issues/5) for detecting a jitsi application independent from the domain.
+- Currently, the extension is only available in German 🇩🇪 translation. There is an [open issue](https://github.com/Robert-Beier/jitsi-speaker-stats-exporter/issues/3) for adding localization.
 
 ## 3rd party licenses
 
