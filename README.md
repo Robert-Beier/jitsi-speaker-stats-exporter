@@ -1,4 +1,4 @@
-# Jitsi speaker stats exporter 👥🗣⬇️
+# Jitsi speaker stats exporter
 
 This extension for Google Chrome exports the speaker statistics of an open jitsi room as a CSV file.
 
