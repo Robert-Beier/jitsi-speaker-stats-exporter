@@ -10,7 +10,7 @@ The extension has been submitted for the Chrome Web Store but is currently in th
 
 ## Why the application was created
 
-The extension was created because a friend's organization provides voluntary web seminars for old people. The organization needs to prove this to the sponsors. It's a German organization.
+The extension was created because a friend's organization provides voluntary web seminars for old people. The organization needs to prove this to the sponsors. It's a German organization. This is why the first version was written in German, too.
 
 ## Limitations
 
