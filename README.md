@@ -8,10 +8,14 @@ This extension for Google Chrome exports the speaker statistics of an open jitsi
 
 The extension has been submitted for the Chrome Web Store but is currently in the audit state. I'll add a link here as soon as it's been published.
 
+## Why the application was created
+
+The extension was created because a friend's organization provides voluntary web seminars for old people. The organization needs to prove this to the sponsors. It's a German organization. This is why the first version was written in German, too.
+
 ## Limitations
 
-- This extension only works on https://meet.jit.si right now.
-- Currently, the extension is only available in German translation. 🇩🇪
+- This extension only works on https://meet.jit.si right now. There is an [open issue](https://github.com/Robert-Beier/jitsi-speaker-stats-exporter/issues/5) for detecting a jitsi application independent from the domain.
+- Currently, the extension is only available in German 🇩🇪 translation. There is an [open issue](https://github.com/Robert-Beier/jitsi-speaker-stats-exporter/issues/3) for adding localization.
 
 ## 3rd party licenses
 
