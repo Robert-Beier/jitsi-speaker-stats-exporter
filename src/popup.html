@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+    <head>
+        <style>
+            #export {
+                width: 200px;
+                border: 0;
+                min-width: inherit;
+                font-size: 14px;
+                font-weight: bold;
+                background: #0074E0;
+                border-radius: 4px;
+                color: #FFF;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                margin: 4px;
+                padding: 10px 30px;
+            }
 
-<head>
-</head>
+            #export:hover {
+                background: #008df9;
+            }
 
-<body>
-  <button id="export">Export CSV</button>
-  <script src="popup.js"></script>
-</body>
+            #title {
+                margin-bottom: 0;
+            }
 
+            .divider {
+                margin: 3px;
+            }
+        </style>
+        <title>Jitsi Sprecher-Statistiken</title>
+    </head>
+    <body>
+        <div>
+            <h3 id="title">Jitsi Sprecher-Statistiken</h3>
+            <hr class="divider"/>
+            <button id="export">Speichere CSV</button>
+            <script src="popup.js"></script>
+        </div>
+    </body>
 </html>
