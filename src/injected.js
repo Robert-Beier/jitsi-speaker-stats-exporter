@@ -21,15 +21,15 @@
         }
         return timeString;
     }
-    function getSpeakerRows(speakerStats) {
+    function getSpeakerRows(speakerStats, localDisplayName) {
         return Object.values(speakerStats).map(speakerDetails => {
-            const name = speakerDetails.displayName || 'Unbekannt';
+            const name = (speakerDetails._isLocalStats ? localDisplayName : speakerDetails.displayName) || 'Unbekannt';
             const timeString = getTimeStringForSpeaker(speakerDetails);
             return [name, timeString];
         });
     }
-    function getRows(speakerStats, roomName, currentDate) {
-        const speakerRows = getSpeakerRows(speakerStats);
+    function getRows(speakerStats, roomName, currentDate, localDisplayName) {
+        const speakerRows = getSpeakerRows(speakerStats, localDisplayName);
         const headerRows = getHeaderRows(roomName, currentDate);
         return [...headerRows, ...speakerRows];
     }
@@ -42,7 +42,7 @@
         return roomName + '_' + currentDate.toISOString().split('T')[0] + ".csv";
     }
     function downloadCSVFile(fileName, encodedUri) {
-        var link = document.createElement("a");
+        const link = document.createElement("a");
         link.setAttribute("href", encodedUri);
         link.setAttribute("download", fileName);
         document.body.appendChild(link);
@@ -54,9 +54,10 @@
         return;
     }
     const speakerStats = window.APP.conference.getSpeakerStats();
+    const localDisplayName = window.APP.conference.getLocalDisplayName();
     const currentDate = new Date();
     const roomName = window.APP.conference.roomName;
-    const rows = getRows(speakerStats, roomName, currentDate);
+    const rows = getRows(speakerStats, roomName, currentDate, localDisplayName);
     const encodedUri = getEncodedUri(rows);
     const fileName = getFileName(roomName, currentDate);
     downloadCSVFile(fileName, encodedUri);
