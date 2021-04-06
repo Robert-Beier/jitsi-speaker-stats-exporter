@@ -6,7 +6,7 @@ This extension for Google Chrome exports the speaker statistics of an open jitsi
 
 ## ⬇️ Download on the Google Chrome Web Store
 
-The extension has been submitted for the Chrome Web Store but is currently in the audit state. I'll add a link here as soon as it's been published.
+Download [here](https://chrome.google.com/webstore/detail/mnokejfahilneembnhjdnpcdjgdklgff).
 
 ## ❓ Why the application was created
 
