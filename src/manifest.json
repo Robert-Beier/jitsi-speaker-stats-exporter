@@ -1,7 +1,7 @@
 {
   "name": "Jitsi speaker stats exporter",
   "version": "1.1",
-  "description": "Diese Erweiterung exportiert die Speaker Statistics aus einem jitsi Raum als eine CSV Datei.",
+  "description": "This extension exports speaker statistics of a jitsi room as a CSV file.",
   "permissions": [
     "activeTab",
     "declarativeContent"
