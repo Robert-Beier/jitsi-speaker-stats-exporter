@@ -1,0 +1,6 @@
+{
+  "extensionName": "Jitsi speaker stats exporter",
+  "extensionDescription": "This extension exports speaker statistics of a jitsi room as a CSV file.",
+  "saveCSV": "Save CSV",
+  "title": "Jitsi speaker stats"
+}

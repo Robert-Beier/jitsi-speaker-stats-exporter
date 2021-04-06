@@ -1,9 +1,11 @@
 'use strict';
 
-let exportButton = document.getElementById('export');
+const exportButton = document.getElementById('export');
+const title = document.getElementById('title');
+const headerTitle = document.getElementById('header-title');
 
-exportButton.onclick = function (element) {
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+exportButton.onclick = function () {
+  chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
     chrome.tabs.executeScript(
       tabs[0].id,
       {
@@ -11,3 +13,7 @@ exportButton.onclick = function (element) {
       });
   });
 };
+
+exportButton.innerText = chrome.i18n.getMessage('saveCSV');
+title.innerText = chrome.i18n.getMessage('title');
+headerTitle.innerText = chrome.i18n.getMessage('title');
